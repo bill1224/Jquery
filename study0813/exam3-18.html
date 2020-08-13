@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML 태그 제어하기</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <style>
+      .targetBox {
+        width: 200px;
+        height: 60px;
+        padding: 20px;
+        background: skyblue;
+      }
+    </style>
+    <script>
+      $(function () {
+        target = $(".targetBox");
+
+        target.click(function () {
+          target.html("<img src='./media/code.jpg' />");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="targetBox">
+      저를 클릭하면 제가 만든 코딩사진이 나와요~
+    </div>
+  </body>
+</html>

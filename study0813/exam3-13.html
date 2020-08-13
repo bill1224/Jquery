@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jquery로 CSS 컨트롤</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <style>
+      div {
+        width: 200px;
+        height: 60px;
+        padding: 20px;
+      }
+    </style>
+    <script>
+      $(function () {
+        $(".targetBox").click(function () {
+          $(".targetBox").css("border-radius", "10px");
+          $(".targetBox").css("background", "skyblue");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="targetBox">
+      저를 클릭하면 배경과 border-radius를 적용합니다.
+    </div>
+  </body>
+</html>

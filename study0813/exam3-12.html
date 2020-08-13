@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jquery로 CSS 컨트롤</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <style>
+      div {
+        width: 200px;
+        height: 60px;
+        padding: 20px;
+        background: skyblue;
+      }
+    </style>
+    <script>
+      $(function () {
+        $(".targetBox").click(function () {
+          $(".targetBox").css("color", "white");
+          $(".targetBox").css("background", "black");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="targetBox">
+      저를 클릭하면 글씨 색이 변합니다.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>텍스트 제어하기</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <style>
+      div {
+        width: 200px;
+        height: 60px;
+        padding: 20px;
+        background: skyblue;
+      }
+    </style>
+    <script>
+      $(function () {
+        $(".targetBox").click(function () {
+          $(".targetBox").text("클릭하셨네요~? 짝짝짝");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="targetBox">
+      저를 클릭하면 글씨가 변합니다.
+    </div>
+  </body>
+</html>

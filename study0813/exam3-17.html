@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>텍스트 제어하기</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <style>
+      .targetBox {
+        width: 200px;
+        height: 60px;
+        padding: 20px;
+        background: skyblue;
+      }
+      .targetBox2 {
+        width: 200px;
+        height: 60px;
+        padding: 20px;
+        background: yellow;
+      }
+    </style>
+    <script>
+      $(function () {
+        $(".targetBox").click(function () {
+          $(".targetBox2").text($(".targetBox").text());
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="targetBox">
+      저를 클릭하면 글씨가 다른 div에 text가 전송되요~!
+    </div>
+    <div class="targetBox2"></div>
+  </body>
+</html>

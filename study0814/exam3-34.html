@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>함수 사용</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <style>
+      #targetBox {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 20x;
+        background: skyblue;
+        position: absolute;
+      }
+    </style>
+    <script>
+      $(function () {
+        function plus(num1, num2) {
+          var result = num1 + num2;
+          console.log(
+            num1 + "와" + num2 + "를 더한 값은 " + result + "입니다."
+          );
+        }
+        var a = 5,
+          b = 12,
+          c = 20,
+          d = 28;
+
+        plus(a, b);
+        plus(b, c);
+        plus(c, d);
+        plus(d, a);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="targetBox"></div>
+  </body>
+</html>

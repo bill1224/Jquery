@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>클래스 추가하기</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <style>
+      .targetBox {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 20x;
+        background: skyblue;
+        position: absolute;
+      }
+      .newBox {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 20x;
+        background: yellow;
+        position: absolute;
+      }
+    </style>
+    <script>
+      $(function () {
+        target = $(".targetBox");
+
+        target.click(function () {
+          target.removeClass("targetBox");
+          target.addClass("newBox");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="targetBox">
+      여기를 클릭하면 class 가 targetBox 에서 newBox로 변경됩니다.
+    </div>
+  </body>
+</html>

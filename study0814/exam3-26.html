@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>값을 제어하기</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <script>
+      $(function () {
+        var name = $("#namelist"),
+          btn = $("#btn");
+
+        btn.click(function () {
+          $("#namelist").val("최최최");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <select id="namelist">
+      <option value="박박박">박박박</option>
+      <option value="최최최">최최최</option>
+      <option value="학학학">학학학</option>
+      <option value="김김김">김김김</option>
+    </select>
+    <button id="btn">이름변경</button>
+  </body>
+</html>

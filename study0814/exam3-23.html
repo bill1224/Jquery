@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>클래스 추가하기</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <style>
+      .parent1 > .parent2 {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 20x;
+        background: skyblue;
+        position: absolute;
+      }
+    </style>
+    <script>
+      $(function () {
+        parent1 = $(".parent1");
+        parent2 = $(".parent2");
+        btn = $("#btn");
+
+        btn.click(function () {
+          parent1.append(parent2);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="parent1">
+      부모 엘리먼트1
+    </div>
+    <div class="parent2">
+      부모 엘리먼트2
+    </div>
+    <div><button id="btn">상속시키기</button></div>
+  </body>
+</html>

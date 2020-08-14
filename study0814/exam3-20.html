@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>애니메이션</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <style>
+      #targetBox {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 20x;
+        background: skyblue;
+        position: absolute;
+      }
+    </style>
+    <script>
+      $(function () {
+        //target = $("#targetBox");
+        $("#targetBox").click(function () {
+          $("#targetBox").animate(
+            {
+              left: 100,
+              top: 100,
+            },
+            5000
+          );
+          $("#targetBox").animate(
+            {
+              left: 0,
+              top: 0,
+            },
+            5000
+          );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="targetBox"></div>
+  </body>
+</html>

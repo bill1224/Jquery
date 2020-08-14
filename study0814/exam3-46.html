@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>구구단 만들기</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <style>
+      body {
+        height: 5000px;
+      }
+      #targetBox {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 20x;
+        position: fixed;
+        background: skyblue;
+        display: none;
+      }
+    </style>
+    <script>
+      $(function () {
+        $(window).scroll(function () {
+          let nowScrollVar = $(this).scrollTop();
+          console.log(nowScrollVar);
+
+          if (nowScrollVar >= 1000 && nowScrollVar <= 1500) {
+            $("#targetBox").show();
+            $("#targetBox").text("숙제 세이코-");
+          } else {
+            $("#targetBox").show();
+            $("#targetBox").text("진수쿤!!^_^");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="targetBox"></div>
+  </body>
+</html>

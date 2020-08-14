@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>this 사용하기</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <script>
+      $(function () {
+        var hello = $(".hello");
+
+        hello.click(function () {
+          $(this).text("헬로우 월드"); // 여러게의 hello라는 선택자중에서 클릭된 hello만 적용됨
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="hello">hello world!</div>
+    <div class="hello">hello world!</div>
+    <div class="hello">hello world!</div>
+    <div class="hello">hello world!</div>
+    <div class="hello">hello world!</div>
+    <div class="hello">hello world!</div>
+  </body>
+</html>

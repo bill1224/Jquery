@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>함수 return 사용</title>
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <style>
+      #targetBox {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 20x;
+        background: skyblue;
+        position: absolute;
+      }
+    </style>
+    <script>
+      $(function () {
+        function plus(num1, num2) {
+          var result = num1 + num2;
+          return result;
+        }
+
+        console.log("plus함수의 result값은 " + plus(25, 62));
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
